@@ -1,0 +1,20 @@
+{
+  "name": "bun-elysia-vc",
+  "type": "module",
+  "version": "1.0.50",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "migrate": "bun run scripts/migrate.ts",
+    "scrape": "bun run scripts/scrape.ts",
+    "seed": "bun run scripts/seed.ts",
+    "deploy": "vc deploy --prod"
+  },
+  "dependencies": {
+    "elysia": "latest"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "^5.9.3"
+  }
+}
